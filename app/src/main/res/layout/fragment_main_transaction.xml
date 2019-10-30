@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_theme"
+    android:orientation="vertical">
+
+    <com.achpay.wallet.widget.tabs.SlidingTabLayout
+        android:id="@+id/fragment_transaction_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/tablayout_background"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable">
+
+    </com.achpay.wallet.widget.tabs.SlidingTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_transaction_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

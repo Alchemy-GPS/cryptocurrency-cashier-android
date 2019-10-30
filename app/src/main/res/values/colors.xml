@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="trans_black">#88000000</color>
+    <color name="grey_theme">#F0F0F0</color>
+    <color name="dark_grey">#7B7B7B</color>
+    <color name="grey_33">#333333</color>
+    <color name="grey_cc">#CCCCCC</color>
+    <color name="grey_c2">#C2C2C2</color>
+    <color name="grey_aa">#AAAAAA</color>
+    <color name="welcome_background">#ECECEC</color>
+
+    <color name="checkout_firstitem">#4E5860</color>
+
+    <color name="input_confirm">#FF6000</color>
+    <color name="input_unconfirm">#777777</color>
+    <color name="input_grey">#AAAAAA</color>
+
+    <color name="receipt_address">#78A1FC</color>
+
+    <color name="account_origin_background">#FFFA9946</color>
+    <color name="account_collapsed_background">#FFFA9946</color>
+
+    <color name="common_gray">#FFF0EFF5</color>
+
+    <color name="line_gray">#EFEFEF</color>
+    <color name="qrcode_grey">#C4C4C4</color>
+    <color name="update_grey">#F5F5F5</color>
+    <color name="update_background">#664F5761</color>
+
+    <color name="tablayout_background">#4F5761</color>
+
+</resources>

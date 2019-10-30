@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_theme"
+    android:orientation="vertical"
+    tools:context=".mvp.cointype.CoinTypeActivity">
+
+    <include layout="@layout/left_back_titlebar"/>
+
+    <com.achpay.wallet.widget.tabs.SlidingTabLayout
+        android:id="@+id/cointype_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/tablayout_background"
+        android:visibility="gone"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable">
+
+    </com.achpay.wallet.widget.tabs.SlidingTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/cointype_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

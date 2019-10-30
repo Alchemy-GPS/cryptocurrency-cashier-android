@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_theme"
+    tools:context=".mvp.history.HistoryActivity">
+
+    <include
+        android:id="@+id/history_title_bar"
+        layout="@layout/left_back_titlebar"/>
+
+    <RelativeLayout
+        android:id="@+id/history_total_info"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/history_title_bar"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/history_coin_info"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/account_merchant_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/history_coin_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0.00000000"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/history_coin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/account_coin_name"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/history_currency_info"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/history_coin_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/history_total_currency_about"
+                android:textColor="@color/input_unconfirm"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/history_total_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0.00"
+                android:textColor="@color/input_unconfirm"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/empty_space"
+                android:textColor="@color/input_unconfirm"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/history_currency_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CNY"
+                android:textColor="@color/input_unconfirm"
+                android:textSize="14dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/history_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/history_total_info"
+        android:background="@color/line_gray"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/history_detail_info"
+        android:textColor="@color/input_unconfirm"
+        android:textSize="12dp"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/history_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/history_receipt"
+        android:layout_below="@+id/history_detail_info"
+        app:srlEnableLoadMoreWhenContentNotFull="false">
+
+        <com.achpay.wallet.widget.ClassicHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlEnableLastTime="false"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/history_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Translate"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/history_receipt"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/input_confirm">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/history_receipt"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+</RelativeLayout>

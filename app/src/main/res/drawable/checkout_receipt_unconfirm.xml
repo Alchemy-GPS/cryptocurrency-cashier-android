@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"  >
+    <!-- 填充的颜色 -->
+
+    <solid android:color="#FFAF7F" />
+
+
+    <!-- 设置边框宽度 -->
+    <!--<stroke android:width="1dp" android:color="#999999"/>-->
+
+    <!-- 四个角的弧度 -->
+    <corners
+        android:bottomLeftRadius="4dp"
+        android:bottomRightRadius="4dp"
+        android:topLeftRadius="4dp"
+        android:topRightRadius="4dp" />
+</shape>

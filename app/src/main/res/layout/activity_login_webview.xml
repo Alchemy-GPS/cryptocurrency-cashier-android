@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.login.LoginWebviewActivity">
+
+    <RelativeLayout
+        android:id="@+id/login_web_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/titlebar_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/login_button_login"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/login_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login_web_title"/>
+
+    <ProgressBar
+        android:id="@+id/login_web_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/login_web_title"
+        android:max="100"
+        android:progressDrawable="@drawable/login_webview_progress"
+        android:visibility="gone">
+    </ProgressBar>
+
+</RelativeLayout>

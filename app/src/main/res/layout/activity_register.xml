@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".mvp.register.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/register_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/register_title_bar"
+            layout="@layout/left_back_titlebar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_theme" />
+
+        <RelativeLayout
+            android:id="@+id/register_account_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/register_account_img"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/ic_account_login" />
+
+            <EditText
+                android:id="@+id/register_account_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/register_account_img"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/login_input_account_number"
+                android:inputType="textVisiblePassword"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="#606470"
+                android:textCursorDrawable="@drawable/text_cursor_login"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/register_account_delete_layout"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/input_delete" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/register_shop_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/register_shop_name_img"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/ic_register_shop" />
+
+            <EditText
+                android:id="@+id/register_shop_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/register_shop_name_img"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/register_input_shop_name"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="#606470"
+                android:textCursorDrawable="@drawable/text_cursor_login"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/register_shop_name_delete_layout"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/input_delete" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/register_email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/register_email_img"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/ic_register_email" />
+
+            <EditText
+                android:id="@+id/register_email_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/register_email_img"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/register_input_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="#606470"
+                android:textCursorDrawable="@drawable/text_cursor_login"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/register_email_delete_layout"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/input_delete" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/register_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/register_password_img"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/ic_password_login" />
+
+            <EditText
+                android:id="@+id/register_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/register_password_img"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/register_input_password"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="#606470"
+                android:textCursorDrawable="@drawable/text_cursor_login"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/register_password_delete_layout"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/input_delete" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/register_verify_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/register_verify_password_img"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/ic_password_login" />
+
+            <EditText
+                android:id="@+id/register_verify_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/register_verify_password_img"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/register_input_verify_password"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="#606470"
+                android:textCursorDrawable="@drawable/text_cursor_login"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/register_verify_password_delete_layout"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/input_delete" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/login_button_background"
+            android:gravity="center"
+            android:text="@string/register_register"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.login.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/login_root_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".mvp.login.LoginActivity">
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="312dp"
+            android:layout_height="183dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/img_logo_login" />
+
+        <RelativeLayout
+            android:id="@+id/login_language_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/language_setting_title"
+                android:textColor="#235AD2"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/qfpay_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_logo"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="1dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/qfpay_login_source"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:text="@string/login_qfpay_account"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_account_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/qfpay_login_layout"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="19dp">
+
+            <ImageView
+                android:id="@+id/login_account_number_img"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/ic_account_login" />
+
+            <EditText
+                android:id="@+id/login_account_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/login_account_number_img"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/login_input_account_number"
+                android:inputType="textVisiblePassword"
+                android:textColor="@color/black"
+                android:textColorHint="#606470"
+                android:textCursorDrawable="@drawable/text_cursor_login"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_merchant_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/login_account_number_layout"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="19dp">
+
+            <ImageView
+                android:id="@+id/login_merchant_password_img"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/ic_password_login" />
+
+            <EditText
+                android:id="@+id/login_merchant_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/login_merchant_password_img"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/login_input_password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="#606470"
+                android:textCursorDrawable="@drawable/text_cursor_login"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_go_to_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/login_merchant_password_layout"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/login_go_to_register"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/login_button_tv"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/login_merchant_password_layout"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/login_button_background"
+            android:gravity="center"
+            android:text="@string/login_button_login"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</LinearLayout>
+

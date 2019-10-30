@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".mvp.about.AboutActivity">
+
+    <include
+        android:id="@+id/about_title_bar"
+        layout="@layout/left_back_titlebar"/>
+
+    <ImageView
+        android:id="@+id/about_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/about_title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/about_logo"/>
+
+    <TextView
+        android:id="@+id/about_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="ACHPAY"
+        android:textSize="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_app_name"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Installed version "
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/about_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0.4"
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/about_app_copy_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="15dp"
+        android:text="© Copyright 2018 ALCHEMY FOUNDATION LTD."
+        android:textSize="10dp"/>
+</RelativeLayout>

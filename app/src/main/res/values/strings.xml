@@ -1,0 +1,318 @@
+<resources>
+    <string name="app_name">Alchemy</string>
+
+    <string name="empty_space">&#160;&#160;</string>
+    <string name="empty_space_one">&#160;</string>
+    <string name="create_qrcode">生成二维码</string>
+    <string name="scan_qrcode">扫描二维码</string>
+
+    <string name="main_checkout">收款</string>
+    <string name="main_account">账户</string>
+    <string name="main_setting">设置</string>
+    <string name="main_transaction">账单</string>
+    <string name="main_mine">我的</string>
+
+    <string name="login_alchemy_account">ALCHEMY</string>
+    <string name="login_qfpay_account">QFPI 登录</string>
+    <string name="login_input_phone">请输入手机号</string>
+    <string name="login_input_account_number">请输入账号</string>
+    <string name="login_input_password">请输入密码</string>
+    <string name="login_button_login">登&#160;录</string>
+    <string name="login_empty_phone">手机号不能为空</string>
+    <string name="login_empty_password">密码不能为空</string>
+    <string name="login_login_fail">登录失败</string>
+    <string name="login_go_to_register">还没有账号?注册</string>
+
+    <string name="register_register">注&#160;&#160;册</string>
+    <string name="register_registering">注册中&#8230;</string>
+    <string name="register_error">注册失败</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_input_account">请输入登录账号</string>
+    <string name="register_input_shop_name">请输入商户名称</string>
+    <string name="register_input_email">请输入邮箱</string>
+    <string name="register_input_password">请输入6至12位数字和字母</string>
+    <string name="register_input_verify_password">请再次输入密码</string>
+    <string name="register_account_empty_tip">账号不能为空</string>
+    <string name="register_shop_name_empty_tip">商店名不能为空</string>
+    <string name="register_email_empty_tip">邮箱不能为空</string>
+    <string name="register_password_empty_tip">密码不能为空</string>
+    <string name="register_password_not_verified">两次密码不一致</string>
+    <string name="register_email_regex_not_match">邮箱格式不正确</string>
+
+    <string name="input_title">收款金额</string>
+    <string name="input_title_rate">实时汇率</string>
+    <string name="input_test_tips">当前正在使用测试网络</string>
+    <string name="amount_input_confirm">确认</string>
+    <string name="amount_input_back">删除</string>
+    <string name="amount_input_hint">输入消费金额</string>
+    <string name="amount_input_equals">≈&#160;</string>
+    <string name="amount_input_coinzero">0.00000000</string>
+    <string name="amount_input_currzero">0.00</string>
+
+    <string name="rate_title">实时汇率</string>
+    <string name="rate_current_order">当前订单</string>
+    <string name="rate_reference">参考汇率</string>
+    <string name="rate_check_on_website">在&#160;coinmarketcap&#160;上查看</string>
+
+    <string name="account_coin_name">&#160;BTC</string>
+    <string name="account_totalcurrency_part">总资产约&#160;&#160;</string>
+    <string name="account_equivalent">折合&#160;</string>
+    <string name="account_item_equals">≈</string>
+
+    <string name="account_detail_title">账户详情</string>
+    <string name="account_detail_address">收款地址</string>
+    <string name="account_detail_period">结算周期</string>
+    <string name="account_detail_settlement">最低结算金额</string>
+    <string name="account_detail_about">关于</string>
+    <string name="account_detail_asset">资产详情</string>
+    <string name="account_detail_setting">设置</string>
+    <string name="account_detail_days">天</string>
+    <string name="account_detail_quit">安全退出</string>
+    <string name="account_detail_lightning_network">闪电网络通道</string>
+
+    <string name="transaction_last_threeday">最近三天</string>
+    <string name="transaction_last_week">最近一周</string>
+    <string name="transaction_last_month">最近一个月</string>
+    <string name="transaction_newest_data">已经是最新数据</string>
+    <string name="transaction_title_order">订单流水</string>
+    <string name="transaction_title_statement">账单历史</string>
+
+    <string name="transaction_statement_trade">收款</string>
+    <string name="transaction_statement_exchange">兑换</string>
+    <string name="transaction_statement_settle">结算</string>
+
+    <string name="item_transaction_income">收款</string>
+    <string name="item_transaction_plus">+&#160;</string>
+    <string name="item_transaction_minus">-&#160;</string>
+
+    <string name="item_cointype_text">点击收款</string>
+    <string name="item_cointype_name">BTC</string>
+    <string name="item_first_income">最新一笔收款</string>
+
+    <string name="order_detail_title">订单详情</string>
+    <string name="order_detail_orderid">订&#160;&#160;单&#160;&#160;号</string>
+    <string name="order_detail_orderstatus">订单状态</string>
+    <string name="order_detail_blocknums">确认区块</string>
+    <string name="order_detail_ordertime">支付时间</string>
+    <string name="order_detail_currency_amount">折合法币</string>
+    <string name="order_detail_orderreceive">已&#160;&#160;收&#160;&#160;到</string>
+    <string name="order_detail_check">在blockchain上查看</string>
+    <string name="order_detail_exception">收款异常</string>
+    <string name="order_detail_less">少收</string>
+    <string name="order_detail_more">多收</string>
+    <string name="order_detail_confirming">确认中</string>
+    <string name="order_detail_msuccess">成功(多收)</string>
+    <string name="order_detail_lsuccess">成功(少收)</string>
+    <string name="order_detail_success">收款成功</string>
+    <string name="order_detail_dealing">订单已接收</string>
+    <string name="order_detail_fail">收款失败</string>
+    <string name="order_detail_close">关闭</string>
+    <string name="order_detail_continue">继续收款</string>
+
+    <string name="order_detail_order_amount">订单金额</string>
+    <string name="order_detail_received_amount">实收金额</string>
+
+    <string name="receipt_discount_title">收款码</string>
+    <string name="receipt_address">收款地址</string>
+    <string name="receipt_address_withamount">收款码携带收款金额</string>
+    <string name="receipt_coin_amount">订单金额&#160;:</string>
+    <string name="receipt_currency_amount">折合法币&#160;:</string>
+    <string name="receipt_discount_amount">优惠金额&#160;:</string>
+    <string name="receipt_extra_amount">附加费金额&#160;:</string>
+    <string name="receipt_recommand_fee">推荐手续费&#160;:</string>
+    <string name="receipt_recommand_fee_unit">&#160;satoshis/byte</string>
+    <string name="receipt_order_detail">订单状态&#160;:</string>
+    <string name="receipt_order_status">正在交易</string>
+    <string name="receipt_common_address">普通地址</string>
+    <string name="receipt_segwit_address">隔离见证地址</string>
+    <string name="receipt_order_success">收款成功</string>
+    <string name="receipt_order_confirm">正在确认</string>
+    <string name="receipt_confirmblocknums_part1">已有&#160;</string>
+    <string name="receipt_confirmblocknums_part2">&#160;个区块确认</string>
+    <string name="receipt_amount_exceed_limit">金额超过限额</string>
+
+    <string name="dialog_confirm">确认</string>
+    <string name="dialog_cancel">取消</string>
+
+    <string name="dialog_discount_setting">优惠额度修改</string>
+    <string name="dialog_discount_cash">按现金计算</string>
+    <string name="dialog_discount_cashamount">请填写优惠金额</string>
+    <string name="dialog_discount_percent">按百分比计算</string>
+    <string name="dialog_discount_percentamount">请填写优惠百分比(如0.01)</string>
+
+    <string name="dialog_extra_setting">附加费额度修改</string>
+    <string name="dialog_extra_cash">按现金附加</string>
+    <string name="dialog_extra_cashamount">请填写附加金额</string>
+    <string name="dialog_extra_percent">按百分比附加</string>
+    <string name="dialog_extra_percentamount">请填写附加百分比(如0.01)</string>
+
+    <string name="dialog_global_title">订单异常</string>
+    <string name="dialog_global_message">您有一笔收款异常订单</string>
+    <string name="dialog_global_known">知道了</string>
+    <string name="dialog_global_vieworder">查看</string>
+
+    <string name="dialog_downloaded_info">应用已下载完成,点确定立即更新</string>
+    <string name="dialog_downloaded_info_error">文件下载错误,点击重新下载</string>
+    <string name="dialog_downloaded_title">下载完成</string>
+    <string name="dialog_downloaded_title_error">下载出错</string>
+    <string name="dialog_update_title">发现新版本,请及时更新</string>
+    <string name="dialog_update_cancel">取&#160;&#160;消</string>
+    <string name="dialog_update_confirm">确&#160;&#160;认</string>
+
+    <string name="setting_title">设置</string>
+    <string name="setting_merchant_info">商户信息</string>
+    <string name="setting_expense">费用设置&#160;&#160;(二选一)</string>
+    <string name="setting_discount">优惠设置</string>
+    <string name="setting_discount_amount">去设置优惠额度</string>
+    <string name="setting_extra">附加费设置</string>
+    <string name="setting_extra_amount">去设置附加费</string>
+    <string name="setting_currency_and_language">货币语言设置</string>
+    <string name="setting_currency_type">去修改货币类型</string>
+    <string name="setting_default_language">去修改系统语言</string>
+    <string name="setting_safe">安全设置</string>
+    <string name="setting_gesture_password">去修改手势密码</string>
+    <string name="setting_net_config">网络切换</string>
+    <string name="setting_grant_points">发放积分</string>
+
+    <string name="assets_detail_title">资产详情</string>
+
+    <string name="discount_setting_title">优惠设置</string>
+    <string name="discount_setting_choose">优惠计算方式&#160;&#160;(二选一)</string>
+    <string name="discount_setting_cash">按现金计算</string>
+    <string name="discount_setting_cashamount">请填写优惠金额</string>
+    <string name="discount_setting_percent">按百分比计算</string>
+    <string name="discount_setting_percentamount">请填写优惠百分比(如0.01)</string>
+    <string name="discount_setting_confirm">确定</string>
+    <string name="discount_setting_error_percent">请填写0~1之间的小数</string>
+    <string name="discount_setting_error_cash">请填写大于0的数值</string>
+
+    <string name="extra_setting_title">附加费设置</string>
+    <string name="extra_setting_choose">附加费计算方式&#160;&#160;(二选一)</string>
+    <string name="extra_setting_cash">按现金计算</string>
+    <string name="extra_setting_cashamount">请填写附加费金额</string>
+    <string name="extra_setting_percent">按百分比计算</string>
+    <string name="extra_setting_percentamount">请填写附加百分比(如0.01)</string>
+    <string name="extra_setting_confirm">确定</string>
+
+    <string name="currency_setting_title">货币设置</string>
+
+    <string name="points_grant_title">发放积分</string>
+    <string name="points_grant_member_id">请输入会员ID</string>
+    <string name="points_grant_value">请输入积分</string>
+    <string name="points_grant_success">积分发放成功</string>
+
+    <string name="language_setting_title">语言设置</string>
+
+    <string name="setting_cancel">取消</string>
+    <string name="setting_confirm">完成</string>
+
+    <string name="checkout_no_order">无</string>
+    <string name="checkout_no_detail">没有最新的订单信息</string>
+    <string name="checkout_plus">+&#160;</string>
+    <string name="checkout_receipt_amount">收款金额</string>
+    <string name="checkout_receipt_confirm">确定</string>
+    <string name="checkout_search_coin">点击输入币种</string>
+    <string name="checkout_select_coin">币种选择</string>
+
+    <string name="history_title">币种详情</string>
+    <string name="history_total_currency_about">约&#160;&#160;</string>
+    <string name="history_detail_info">详情</string>
+    <string name="history_receipt">去收款</string>
+    <string name="item_history_receipt">收款</string>
+
+    <string name="progress_wait">请稍等&#8230;</string>
+    <string name="progress_logining">正在登录&#8230;</string>
+
+    <string name="need_storage_permission">在设置中开启储存权限,才能进行更新</string>
+    <string name="check_network">请检查网络是否可用</string>
+    <string name="network_no_wifi">手机处于非WiFi状态,请检查手机下载设置</string>
+
+    <string name="referesh_header_pulldown">下拉刷新</string>
+    <string name="refresh_header_refreshing">正在刷新&#8230;</string>
+    <string name="refresh_header_loading">正在加载&#8230;</string>
+    <string name="refresh_header_release">松开刷新</string>
+    <string name="refresh_header_finish">完成</string>
+    <string name="refresh_header_failed">失败</string>
+    <string name="refresh_header_lasttime">上次更新 m-d hh:mm</string>
+    <string name="refresh_header_second_floor">释放进入二楼</string>
+
+    <string name="refresh_footer_pullup">上拉加载更多</string>
+    <string name="refresh_footer_release">释放立即加载</string>
+    <string name="refresh_footer_loading">正在加载&#8230;</string>
+    <string name="refresh_footer_refreshing">正在刷新&#8230;</string>
+    <string name="refresh_footer_finish">加载完成</string>
+    <string name="refresh_footer_failed">加载失败</string>
+    <string name="refresh_footer_allloaded">没有更多数据了</string>
+
+    <string name="lightning_network_title">闪电网络</string>
+
+    <string name="no_camera_permission">请先开启相机权限</string>
+    <string name="currency_not_supported">暂不支持该币种</string>
+
+    <string name="order_create_failed">创建订单失败</string>
+    <string name="deduct_currency_failed">扣款失败</string>
+    <string name="deduct_currency_success">扣款成功</string>
+
+    <string name="checkout_payment_wechat">微信收款</string>
+
+    <string name="update_info">1.新版本更新的描述新版本更新的描述 \n2.新版本更新的描述 \n3.新版本更新的描述，新版本更新的描述</string>
+
+    <string-array name="language">
+        <item>简体中文</item>
+        <item>繁體中文</item>
+        <item>English</item>
+        <item>日本語</item>
+        <!--<item>한국어</item>-->
+    </string-array>
+
+    <!--
+    现在支持的所有币种
+
+    156 CNY 人民币
+    344 HKD 港币
+    360 IDR 印尼盾
+    392 JPY 日元
+    410 KRW 韩元
+    458 MYR 马来西亚林吉特
+    608 PHP 菲律宾比索
+    702 SGD 新加坡元
+    764 THB 泰铢
+    840 USD 美元
+    -->
+
+    <string-array name="currency_id">
+        <item>156</item>
+        <item>344</item>
+        <item>840</item>
+        <item>392</item>
+        <item>410</item>
+        <item>702</item>
+    </string-array>
+
+    <string-array name="currency">
+        <item>人民币(CNY)</item>
+        <item>港币(HKD)</item>
+        <item>美元(USD)</item>
+        <item>日元(JPY)</item>
+        <item>韩元(KRW)</item>
+        <item>新加坡元(SGD)</item>
+    </string-array>
+
+    <string-array name="currency_name">
+        <item>CNY</item>
+        <item>HKD</item>
+        <item>USD</item>
+        <item>JPY</item>
+        <item>KRW</item>
+        <item>SGD</item>
+    </string-array>
+
+    <string-array name="currency_unit">
+        <item>¥</item>
+        <item>HK$</item>
+        <item>US$</item>
+        <item>JP¥</item>
+        <item>₩</item>
+        <item>S$</item>
+    </string-array>
+</resources>

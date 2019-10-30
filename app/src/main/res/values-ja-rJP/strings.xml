@@ -1,0 +1,275 @@
+<resources>
+    <string name="app_name">Alchemy</string>
+
+    <string name="empty_space">&#160;&#160;</string>
+    <string name="empty_space_one">&#160;</string>
+
+    <string name="main_checkout">集金</string>
+    <string name="main_account">口座</string>
+    <string name="main_setting">設定</string>
+    <string name="main_transaction">取引履歴</string>
+    <string name="main_mine">マイページ</string>
+
+
+    <string name="login_qfpay_account">QFPI アカウント</string>
+    <string name="login_input_phone">携帯番号を入力してください</string>
+    <string name="login_input_account_number">口座番号を入力してください</string>
+    <string name="login_input_password">パスワードを入力してください</string>
+    <string name="login_button_login">ログイン</string>
+    <string name="login_empty_phone">携帯番号は空白にしてはいけません</string>
+    <string name="login_empty_password">パスワードは空白にしてはいけません</string>
+    <string name="login_login_fail">ログインに失敗しました</string>
+
+    <string name="input_title">集金金額</string>
+    <string name="input_title_rate">リアルタイム為替相場</string>
+    <string name="input_test_tips">現在はテストネットワークを使用しています</string>
+    <string name="amount_input_confirm">確認</string>
+    <string name="amount_input_back">削除</string>
+    <string name="amount_input_hint">総額を入力してください</string>
+    <string name="amount_input_equals">≈&#160;</string>
+    <string name="amount_input_coinzero">0.00000000</string>
+    <string name="amount_input_currzero">0.00</string>
+
+    <string name="rate_title">リアルタイム為替相場</string>
+    <string name="rate_current_order">現時点の注文</string>
+    <string name="rate_reference">リファレンス為替相場</string>
+    <string name="rate_check_on_website">coinmarketcapで閲覧します</string>
+
+    <string name="account_coin_name">&#160;BTC</string>
+    <string name="account_totalcurrency_part">総資産約&#160;&#160;</string>
+    <string name="account_equivalent">換算&#160;</string>
+    <string name="account_item_equals">≈</string>
+
+    <string name="account_detail_title">口座詳細</string>
+    <string name="account_detail_address">口座番号</string>
+    <string name="account_detail_period">決算期間</string>
+    <string name="account_detail_settlement">最低決算金額</string>
+    <string name="account_detail_about">について</string>
+    <string name="account_detail_asset">資産詳細</string>
+    <string name="account_detail_setting">設定</string>
+    <string name="account_detail_days">日</string>
+    <string name="account_detail_quit">セキュリティログアウト</string>
+    <string name="account_detail_lightning_network">ライトニングネットワーク通路</string>
+
+    <string name="transaction_last_threeday">最近三日</string>
+    <string name="transaction_last_week">最近一週</string>
+    <string name="transaction_last_month">最近一ヶ月</string>
+    <string name="transaction_newest_data">すでに最新のデータになりました</string>
+    <string name="transaction_title_order">注文の流れ</string>
+    <string name="transaction_title_statement">請求履歴</string>
+
+    <string name="transaction_statement_trade">受取</string>
+    <string name="transaction_statement_exchange">交換</string>
+    <string name="transaction_statement_settle">決済</string>
+
+    <string name="item_transaction_income">受取</string>
+    <string name="item_transaction_plus">+&#160;</string>
+    <string name="item_transaction_minus">-&#160;</string>
+
+    <string name="item_cointype_text">クリックして集金します</string>
+    <string name="item_cointype_name">BTC</string>
+    <string name="item_first_income">最新の入金記録</string>
+
+    <string name="order_detail_title">注文詳細</string>
+    <string name="order_detail_orderid">注文番号</string>
+    <string name="order_detail_orderstatus">注文状態</string>
+    <string name="order_detail_blocknums">承認回数</string>
+    <string name="order_detail_ordertime">支払時間</string>
+    <string name="order_detail_currency_amount">換算法幣</string>
+    <string name="order_detail_orderreceive">受信済み</string>
+    <string name="order_detail_check">blockchainで閲覧します</string>
+    <string name="order_detail_exception">金額異常</string>
+    <string name="order_detail_less">勘定金額より少ない</string>
+    <string name="order_detail_more">勘定金額より多い</string>
+    <string name="order_detail_confirming">確認中</string>
+    <string name="order_detail_msuccess">完了(勘定金額より多い)</string>
+    <string name="order_detail_lsuccess">完了(勘定金額より少ない)</string>
+    <string name="order_detail_success">入金完了</string>
+    <string name="order_detail_dealing">注文が受領済み</string>
+    <string name="order_detail_fail">入金失敗</string>
+    <string name="order_detail_close">クローズド</string>
+    <string name="order_detail_continue">入金を継続します</string>
+
+    <string name="order_detail_order_amount">注文金額</string>
+    <string name="order_detail_received_amount">支払い金额</string>
+
+    <string name="receipt_discount_title">入金QRコード</string>
+    <string name="receipt_address">入金のアドレス</string>
+    <string name="receipt_address_withamount">入金QRコード(金額付き)</string>
+    <string name="receipt_coin_amount">注文金額&#160;:</string>
+    <string name="receipt_currency_amount">換算法幣&#160;:</string>
+    <string name="receipt_discount_amount">特典金額&#160;:</string>
+    <string name="receipt_extra_amount">追加料金金額&#160;:</string>
+    <string name="receipt_recommand_fee">お勧めの手数料&#160;:</string>
+    <string name="receipt_recommand_fee_unit">&#160;satoshis/byte</string>
+    <string name="receipt_order_detail">注文状態&#160;:</string>
+    <string name="receipt_order_status">取引中</string>
+    <string name="receipt_common_address">通常のアドレス</string>
+    <string name="receipt_segwit_address">Segwitアドレス</string>
+    <string name="receipt_order_success">入金完了</string>
+    <string name="receipt_order_confirm">確認中</string>
+    <string name="receipt_confirmblocknums_part1">すでに&#160;</string>
+    <string name="receipt_confirmblocknums_part2">&#160;個のブロックを確認しました</string>
+    <string name="receipt_amount_exceed_limit">金額が上限を超えています</string>
+
+    <string name="dialog_confirm">確認</string>
+    <string name="dialog_cancel">キャンセル</string>
+
+    <string name="dialog_discount_setting">特典額を変更します</string>
+    <string name="dialog_discount_cash">現金で計算します</string>
+    <string name="dialog_discount_cashamount">特典金額を記入して下さい</string>
+    <string name="dialog_discount_percent">パーセンテージで計算します</string>
+    <string name="dialog_discount_percentamount">割引を記入してください</string>
+
+    <string name="dialog_extra_setting">追加料金額を変更します</string>
+    <string name="dialog_extra_cash">現金で追加</string>
+    <string name="dialog_extra_cashamount">追加料金金額を記入してください</string>
+    <string name="dialog_extra_percent">パーセンテージで追加</string>
+    <string name="dialog_extra_percentamount">追加比例を記入してください(例:0.01)</string>
+
+    <string name="dialog_global_title">注文が異常です</string>
+    <string name="dialog_global_message">一つ注文の入金が異常です</string>
+    <string name="dialog_global_known">わかりました</string>
+    <string name="dialog_global_vieworder">閲覧します</string>
+
+    <string name="dialog_downloaded_info">アプリはダウンロード完了しました。確認を押するとすぐ更新できます</string>
+    <string name="dialog_downloaded_info_error">ファイルをダウンロード中にエラーが発生しました。クリックして再度ダウンロードしてください</string>
+    <string name="dialog_downloaded_title">ダウンロード完了</string>
+    <string name="dialog_downloaded_title_error">ダウンロードエラー</string>
+    <string name="dialog_update_title">新しいバージョンが発見されました</string>
+    <string name="dialog_update_cancel">キャンセル</string>
+    <string name="dialog_update_confirm">確&#160;&#160;認</string>
+
+    <string name="setting_title">設定</string>
+    <string name="setting_merchant_info">店舗経営者情報</string>
+    <string name="setting_expense">料金設定(二つの中から一つ選んでください)</string>
+    <string name="setting_discount">特典設定</string>
+    <string name="setting_discount_amount">割引額を設定します</string>
+    <string name="setting_extra">追加料金設定</string>
+    <string name="setting_extra_amount">追加料金を設定します</string>
+    <string name="setting_currency_and_language">通貨言語設定</string>
+    <string name="setting_currency_type">通貨タイプを変更します</string>
+    <string name="setting_default_language">システム言語を変更します</string>
+    <string name="setting_safe">セキュリティ設定</string>
+    <string name="setting_gesture_password">ジェスチャー暗号を変更します</string>
+    <string name="setting_net_config">ネットワーク切替</string>
+    <string name="setting_grant_points">ポイントを支給します</string>
+
+    <string name="assets_detail_title">資産詳細</string>
+
+    <string name="discount_setting_title">特典設定</string>
+    <string name="discount_setting_choose">特典計算方法(二つの中から一つ選んでください)</string>
+    <string name="discount_setting_cash">現金で計算します</string>
+    <string name="discount_setting_cashamount">特典金額を記入して下さい</string>
+    <string name="discount_setting_percent">パーセンテージで計算します</string>
+    <string name="discount_setting_percentamount">割引を記入してください(例0.9)</string>
+    <string name="discount_setting_confirm">確認</string>
+    <string name="discount_setting_error_percent">0~1の間の小数を記入してください</string>
+    <string name="discount_setting_error_cash">0より大きい数値を記入してください</string>
+
+    <string name="extra_setting_title">追加料金設定</string>
+    <string name="extra_setting_choose">追加料金計算方法(二つの中から一つ選んでください)</string>
+    <string name="extra_setting_cash">現金で追加</string>
+    <string name="extra_setting_cashamount">追加料金金額を記入してください</string>
+    <string name="extra_setting_percent">パーセンテージで追加</string>
+    <string name="extra_setting_percentamount">追加比例を記入してください（例:0.01）</string>
+    <string name="extra_setting_confirm">確認</string>
+
+    <string name="currency_setting_title">貨幣設定</string>
+
+    <string name="points_grant_title">ポイントを支給します</string>
+    <string name="points_grant_member_id">会員IDを入力してください</string>
+    <string name="points_grant_value">ポイントを入力してください</string>
+    <string name="points_grant_success">ポイントを支給しました</string>
+
+    <string name="language_setting_title">言語設定</string>
+
+    <string name="setting_cancel">キャンセル</string>
+    <string name="setting_confirm">完了</string>
+
+    <string name="checkout_no_order">なし</string>
+    <string name="checkout_no_detail">最新の注文情報がありません</string>
+    <string name="checkout_plus">+&#160;</string>
+    <string name="checkout_receipt_amount">集金金額</string>
+    <string name="checkout_receipt_confirm">確認</string>
+    <string name="checkout_search_coin">クリックして通貨タイプを入力してください</string>
+    <string name="checkout_select_coin">通貨を選択</string>
+
+    <string name="history_title">通貨タイプ詳細</string>
+    <string name="history_total_currency_about">約&#160;&#160;</string>
+    <string name="history_detail_info">詳細情報</string>
+    <string name="history_receipt">集金に行きます</string>
+    <string name="item_history_receipt">受取</string>
+
+    <string name="progress_wait">待って&#8230;</string>
+    <string name="progress_logining">ログイン中&#8230;</string>
+
+    <string name="need_storage_permission">設定で保存権限を設置しないと更新できません</string>
+    <string name="check_network">ネットワークが使えるかをチェックしてください</string>
+    <string name="network_no_wifi">携帯電話は現在WiFiに接続していません。携帯電話のダウンロード設定をチェックしてください</string>
+
+    <string name="referesh_header_pulldown">下にドラグして更新してください</string>
+    <string name="refresh_header_refreshing">更新中&#8230;</string>
+    <string name="refresh_header_loading">ロード中&#8230;</string>
+    <string name="refresh_header_release">放すと更新します</string>
+    <string name="refresh_header_finish">完了</string>
+    <string name="refresh_header_failed">失敗</string>
+    <string name="refresh_header_lasttime">前回の更新 m-d hh:mm</string>
+    <string name="refresh_header_second_floor">放して二階に入ります</string>
+
+    <string name="refresh_footer_pullup">上にドラグして更に多くの内容を表示させます</string>
+    <string name="refresh_footer_release">放してすぐにロードします</string>
+    <string name="refresh_footer_loading">ロード中&#8230;</string>
+    <string name="refresh_footer_refreshing">更新中&#8230;</string>
+    <string name="refresh_footer_finish">ロード完了</string>
+    <string name="refresh_footer_failed">ロード失敗</string>
+    <string name="refresh_footer_allloaded">これ以上のデータがありません</string>
+
+    <string name="lightning_network_title">ライトニングネットワーク</string>
+
+    <string name="no_camera_permission">カメラの権限を有効にしてください</string>
+    <string name="currency_not_supported">この通貨は現時点ではサポートされていません</string>
+
+    <string name="order_create_failed">注文の作成に失敗しました</string>
+    <string name="deduct_currency_failed">控除に失敗</string>
+
+    <string name="update_info">1.新版本更新的描述新版本更新的描述 \n2.新版本更新的描述 \n3.新版本更新的描述，新版本更新的描述</string>
+
+
+    <string-array name="currency_id">
+        <item>156</item>
+        <item>344</item>
+        <item>840</item>
+        <item>392</item>
+        <item>410</item>
+        <item>702</item>
+    </string-array>
+
+    <string-array name="currency">
+        <item>人民幣(CNY)</item>
+        <item>香港ドル(HKD)</item>
+        <item>米ドル(USD)</item>
+        <item>日本円(JPY)</item>
+        <item>韓国ウォン(KRW)</item>
+        <item>シンガポールドル(SGD)</item>
+    </string-array>
+
+    <string-array name="currency_name">
+        <item>CNY</item>
+        <item>HKD</item>
+        <item>USD</item>
+        <item>JPY</item>
+        <item>KRW</item>
+        <item>SGD</item>
+    </string-array>
+
+    <string-array name="currency_unit">
+        <item>¥</item>
+        <item>HK$</item>
+        <item>US$</item>
+        <item>JP¥</item>
+        <item>₩</item>
+        <item>S$</item>
+    </string-array>
+
+</resources>

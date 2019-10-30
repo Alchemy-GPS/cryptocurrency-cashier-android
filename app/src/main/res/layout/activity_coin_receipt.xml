@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".mvp.receipt.CoinReceiptActivity">
+
+    <include layout="@layout/left_back_titlebar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/receipt_bg"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/button"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/receipt_imageview_qrcode"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/qrcode_grey"/>
+
+                    <TextView
+                        android:id="@+id/receipt_address_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textColor="@color/receipt_address"
+                        android:textSize="14dp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/receipt_address_withamount_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dp"
+                            android:text="@string/receipt_address_withamount"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+
+                        <RelativeLayout
+                            android:id="@+id/receipt_address_withamount_rl"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true">
+
+                            <CheckBox
+                                android:id="@+id/receipt_address_withamount"
+                                android:layout_width="27dp"
+                                android:layout_height="12dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/receipt_rb_selector"
+                                android:button="@null"
+                                android:checked="true"
+                                android:clickable="false"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/receipt_address_gap"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_theme"
+                        android:visibility="gone"/>
+
+                    <com.achpay.wallet.widget.MyRadioGroup
+                        android:id="@+id/receipt_address_radiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:id="@+id/receipt_address_common"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/receipt_common_address"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="16dp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/grey_theme"/>
+
+                        <RadioButton
+                            android:id="@+id/receipt_address_segwit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="@string/receipt_segwit_address"
+                            android:textColor="@color/input_confirm"
+                            android:textSize="16dp"/>
+
+                    </com.achpay.wallet.widget.MyRadioGroup>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/receipt_order_status_layout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="13dp"
+                            android:src="@mipmap/receipt_blue"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="30dp"
+                            android:text="@string/receipt_order_detail"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/receipt_order_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/receipt_order_status"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/receipt_order_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button"
+                    android:clickable="false">
+
+                    <LinearLayout
+                        android:id="@+id/receipt_coin_amount_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="13dp"
+                            android:src="@mipmap/receipt_blue"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="13dp"
+                            android:text="@string/receipt_coin_amount"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/receipt_coin_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/amount_input_coinzero"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/receipt_coin_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="BTC"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/receipt_currency_amount_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/receipt_coin_amount_layout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="30dp"
+                            android:text="@string/receipt_currency_amount"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/receipt_currency_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/amount_input_currzero"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/receipt_currency_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/receipt_recommand_fee_layout_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button">
+
+                    <LinearLayout
+                        android:id="@+id/receipt_recommand_fee_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="13dp"
+                            android:src="@mipmap/receipt_blue"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="13dp"
+                            android:text="@string/receipt_recommand_fee"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/receipt_recommand_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/receipt_recommand_fee_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/receipt_recommand_fee_layout"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="30dp"
+                            android:text="@string/receipt_currency_amount"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/receipt_recommand_fee_currency_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/amount_input_currzero"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/receipt_recommand_fee_currency_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="·"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="总金额的"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/receipt_recommand_fee_pencentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="%"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="13dp"
+                            android:src="@mipmap/receipt_blue"/>
+
+                        <TextView
+                            android:id="@+id/receipt_setting_amount_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="13dp"
+                            android:text="@string/receipt_discount_amount"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/receipt_setting_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/amount_input_currzero"
+                            android:textColor="@color/input_unconfirm"
+                            android:textSize="15dp"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/receipt_discount_setting"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:src="@mipmap/icon_edit"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+
+</LinearLayout>

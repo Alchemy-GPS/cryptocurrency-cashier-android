@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.main.MainActivity">
+
+    <com.achpay.wallet.widget.CtrlScrollViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_theme"/>
+
+    <com.achpay.wallet.widget.tabs.AlphaTabsIndicator
+        android:id="@+id/main_alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.achpay.wallet.widget.tabs.AlphaTabView
+            android:id="@+id/main_tab_sk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            app:paddingTexwithIcon="5dp"
+            app:tabIconNormal="@mipmap/nav_sk"
+            app:tabIconSelected="@mipmap/nav_sk_ed"
+            app:tabText="@string/main_checkout"
+            app:tabTextSize="11dp"
+            app:textBold="true"
+            app:textColorNormal="@color/input_unconfirm"
+            app:textColorSelected="@color/input_confirm"/>
+
+        <com.achpay.wallet.widget.tabs.AlphaTabView
+            android:id="@+id/main_tab_zd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            app:paddingTexwithIcon="5dp"
+            app:tabIconNormal="@mipmap/nav_zd"
+            app:tabIconSelected="@mipmap/nav_zd_ed"
+            app:tabText="@string/main_transaction"
+            app:tabTextSize="11dp"
+            app:textBold="true"
+            app:textColorNormal="@color/input_unconfirm"
+            app:textColorSelected="@color/input_confirm"/>
+
+        <com.achpay.wallet.widget.tabs.AlphaTabView
+            android:id="@+id/main_tab_wd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            app:paddingTexwithIcon="5dp"
+            app:tabIconNormal="@mipmap/nav_wd"
+            app:tabIconSelected="@mipmap/nav_wd_ed"
+            app:tabText="@string/main_mine"
+            app:tabTextSize="11dp"
+            app:textBold="true"
+            app:textColorNormal="@color/input_unconfirm"
+            app:textColorSelected="@color/input_confirm"/>
+    </com.achpay.wallet.widget.tabs.AlphaTabsIndicator>
+
+</LinearLayout>

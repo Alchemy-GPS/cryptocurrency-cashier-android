@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/cointype_menu_create_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_pick_top"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/create_qrcode"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#c9c9c9"/>
+
+    <TextView
+        android:id="@+id/cointype_menu_scan_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_pick_bottom"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/scan_qrcode"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/cointype_menu_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/menu_pick_normal"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/dialog_cancel"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+</LinearLayout>

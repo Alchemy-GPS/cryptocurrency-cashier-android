@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/dialog_extra_setting"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_theme"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/dialog_extra_cash"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <RelativeLayout
+            android:id="@+id/dialog_cash_extra_rl"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <CheckBox
+                android:id="@+id/dialog_cash_extra_cb"
+                android:layout_width="27dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/receipt_rb_selector"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/dialog_cash_extra_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/transparent"
+        android:hint="@string/dialog_extra_cashamount"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/input_unconfirm"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:textSize="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_theme"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/dialog_extra_percent"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <RelativeLayout
+            android:id="@+id/dialog_percent_extra_rl"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <CheckBox
+                android:id="@+id/dialog_percent_extra_cb"
+                android:layout_width="27dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/receipt_rb_selector"
+                android:button="@null"
+                android:clickable="false"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/dialog_percent_extra_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/transparent"
+        android:hint="@string/dialog_extra_percentamount"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/input_unconfirm"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_theme"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_extra_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/input_grey"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_theme"/>
+
+        <TextView
+            android:id="@+id/dialog_extra_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/dialog_confirm"
+            android:textColor="@color/input_confirm"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.qrcode.ScanQrcodeActivity">
+
+    <!--zbar.ZBarView-->
+    <!--zxing.ZXingView-->
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/qr_code_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:qrcv_animTime="1000"
+        app:qrcv_verticalBias="0.35"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@android:color/holo_green_dark"
+        app:qrcv_cornerLength="30dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_rectWidth="220dp"
+        app:qrcv_scanLineColor="@android:color/holo_green_dark"/>
+
+    <RelativeLayout
+        android:id="@+id/left_titlebar_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="14dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/arr_back"/>
+    </RelativeLayout>
+</RelativeLayout>

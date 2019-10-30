@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_theme"
+    tools:context=".mvp.setting.SettingCurrencyTypeActivity">
+
+    <include layout="@layout/left_back_titlebar"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/setting_currency_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/currency_setting_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/setting_confirm_background"
+        android:text="@string/setting_confirm"
+        android:textColor="@color/white"/>
+</LinearLayout>

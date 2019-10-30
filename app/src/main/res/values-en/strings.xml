@@ -1,0 +1,296 @@
+<resources>
+    <string name="app_name">Alchemy</string>
+
+    <string name="empty_space">&#160;&#160;</string>
+    <string name="empty_space_one">&#160;</string>
+    <string name="create_qrcode">Create QRCode</string>
+    <string name="scan_qrcode">Scan QRCode</string>
+
+    <string name="main_checkout">Payment</string>
+    <string name="main_account">Account</string>
+    <string name="main_setting">Settings</string>
+    <string name="main_transaction">Transactions</string>
+    <string name="main_mine">Mine</string>
+
+
+    <string name="login_qfpay_account">QFPI Account</string>
+    <string name="login_input_phone">Please enter phone number</string>
+    <string name="login_input_account_number">Please enter account number</string>
+    <string name="login_input_password">Please enter password</string>
+    <string name="login_button_login">Log In</string>
+    <string name="login_empty_phone">Phone number can\'t be blank</string>
+    <string name="login_empty_password">Password can\'t be blank</string>
+    <string name="login_login_fail">Login Failed</string>
+    <string name="login_go_to_register">No account yet? Register</string>
+
+    <string name="register_register">Register</string>
+    <string name="register_registering">Registering&#8230;</string>
+    <string name="register_error">Register failed!</string>
+    <string name="register_success">Register success!</string>
+    <string name="register_input_account">Please enter account number</string>
+    <string name="register_input_shop_name">Please enter merchant name</string>
+    <string name="register_input_email">Please enter your E-mail address</string>
+    <string name="register_input_password">Please enter your password</string>
+    <string name="register_input_verify_password">Please enter your password again</string>
+    <string name="register_account_empty_tip">Account is empty</string>
+    <string name="register_shop_name_empty_tip">Merchant name is empty</string>
+    <string name="register_email_empty_tip">E-mail address is empty</string>
+    <string name="register_password_empty_tip">Password is empty</string>
+    <string name="register_password_not_verified">Password does not match</string>
+    <string name="register_email_regex_not_match">E-mail address is not right</string>
+
+    <string name="input_title">Receivables Amount</string>
+    <string name="input_title_rate">Live Exchange Rate</string>
+    <string name="input_test_tips">Testing Network Now</string>
+    <string name="amount_input_confirm">Confirm</string>
+    <string name="amount_input_back">Delete</string>
+    <string name="amount_input_hint">Enter Sales Amount</string>
+    <string name="amount_input_equals">≈&#160;</string>
+    <string name="amount_input_coinzero">0.00000000</string>
+    <string name="amount_input_currzero">0.00</string>
+
+    <string name="rate_title">Live Exchange Rate</string>
+    <string name="rate_current_order">Current Order</string>
+    <string name="rate_reference">Reference Exchange Rates</string>
+    <string name="rate_check_on_website">Check at Coinmarketcap</string>
+
+    <string name="account_coin_name">&#160;BTC</string>
+    <string name="account_totalcurrency_part">Total Assets About&#160;&#160;</string>
+    <string name="account_equivalent">Conversion&#160;</string>
+    <string name="account_item_equals">≈</string>
+
+    <string name="account_detail_title">Account Details</string>
+    <string name="account_detail_address">Receipt Address</string>
+    <string name="account_detail_period">Settlement Period</string>
+    <string name="account_detail_settlement">Minimum Settling Amount</string>
+    <string name="account_detail_about">About</string>
+    <string name="account_detail_asset">Asset Details</string>
+    <string name="account_detail_setting">Settings</string>
+    <string name="account_detail_days">Days</string>
+    <string name="account_detail_quit">Safe Quit</string>
+    <string name="account_detail_lightning_network">Lightning Network Channel</string>
+
+    <string name="transaction_last_threeday">Recent 3 Days</string>
+    <string name="transaction_last_week">Recent Week</string>
+    <string name="transaction_last_month">Recent Month</string>
+    <string name="transaction_newest_data">Already the Newest Data</string>
+    <string name="transaction_title_order">Orders</string>
+    <string name="transaction_title_statement">Statements</string>
+
+    <string name="transaction_statement_trade">Trade</string>
+    <string name="transaction_statement_exchange">Exchange</string>
+    <string name="transaction_statement_settle">Settlement</string>
+
+    <string name="item_transaction_income">Received</string>
+    <string name="item_transaction_plus">+&#160;</string>
+    <string name="item_transaction_minus">-&#160;</string>
+
+    <string name="item_cointype_text">Click to receive payment</string>
+    <string name="item_cointype_name">BTC</string>
+    <string name="item_first_income">Newest Payment</string>
+
+    <string name="order_detail_title">Order Details</string>
+    <string name="order_detail_orderid">Order Number</string>
+    <string name="order_detail_orderstatus">Order Status</string>
+    <string name="order_detail_blocknums">Confirmations</string>
+    <string name="order_detail_ordertime">Payment Time</string>
+    <string name="order_detail_currency_amount">Legal Tender</string>
+    <string name="order_detail_orderreceive">Received</string>
+    <string name="order_detail_check">check on blockchain</string>
+    <string name="order_detail_exception">Error Order</string>
+    <string name="order_detail_less">Received Less</string>
+    <string name="order_detail_more">Received More</string>
+    <string name="order_detail_confirming">Confirming</string>
+    <string name="order_detail_msuccess">Success (Received More)</string>
+    <string name="order_detail_lsuccess">Success (Received Less)</string>
+    <string name="order_detail_success">Successful Payment</string>
+    <string name="order_detail_dealing">Order has been received</string>
+    <string name="order_detail_fail">Payment Failed</string>
+    <string name="order_detail_close">Payment Closed</string>
+    <string name="order_detail_continue">Continue to receive payments</string>
+
+    <string name="order_detail_order_amount">Order Amount</string>
+    <string name="order_detail_received_amount">Received Amount</string>
+
+    <string name="receipt_discount_title">Receive</string>
+    <string name="receipt_address">Receive Address</string>
+    <string name="receipt_address_withamount">Amount within Receive QRCode</string>
+    <string name="receipt_coin_amount">Order Amount&#160;:</string>
+    <string name="receipt_currency_amount">Legal Tender&#160;:</string>
+    <string name="receipt_discount_amount">Discount Amount&#160;:</string>
+    <string name="receipt_extra_amount">Additional Fees&#160;:</string>
+    <string name="receipt_recommand_fee">Optimal miner fee&#160;:</string>
+    <string name="receipt_recommand_fee_unit">&#160;satoshis/byte</string>
+    <string name="receipt_order_detail">Order Status&#160;:</string>
+    <string name="receipt_order_status">Transaction in process</string>
+    <string name="receipt_common_address">Normal Address</string>
+    <string name="receipt_segwit_address">Segwit Address</string>
+    <string name="receipt_order_success">Received Successfully</string>
+    <string name="receipt_order_confirm">Confriming</string>
+    <string name="receipt_confirmblocknums_part1">There are&#160;</string>
+    <string name="receipt_confirmblocknums_part2">&#160;blocks confirmed</string>
+    <string name="receipt_amount_exceed_limit">Amount exceeds limit</string>
+
+    <string name="dialog_confirm">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="dialog_discount_setting">Edit Discount Amount</string>
+    <string name="dialog_discount_cash">Caculate with Cash</string>
+    <string name="dialog_discount_cashamount">Enter discount amount</string>
+    <string name="dialog_discount_percent">Calculate with percentage</string>
+    <string name="dialog_discount_percentamount">Enter discount percent (e.g. 0.01)</string>
+
+    <string name="dialog_extra_setting">Edit Additional Fees</string>
+    <string name="dialog_extra_cash">Add with Cash</string>
+    <string name="dialog_extra_cashamount">Enter additional fees</string>
+    <string name="dialog_extra_percent">Add with percentage</string>
+    <string name="dialog_extra_percentamount">Enter additional percentage (e.g.0.01)</string>
+
+    <string name="dialog_global_title">Error Order</string>
+    <string name="dialog_global_message">You have an error order</string>
+    <string name="dialog_global_known">Understood</string>
+    <string name="dialog_global_vieworder">Check</string>
+
+    <string name="dialog_downloaded_info">App downloaded, click confirm to update</string>
+    <string name="dialog_downloaded_info_error">File download failed, click to redownload</string>
+    <string name="dialog_downloaded_title">Download Complete</string>
+    <string name="dialog_downloaded_title_error">Download Error</string>
+    <string name="dialog_update_title">New version is available, Please update</string>
+    <string name="dialog_update_cancel">Cancel</string>
+    <string name="dialog_update_confirm">Confirm</string>
+
+    <string name="setting_title">Setting</string>
+    <string name="setting_merchant_info">Merchant Info</string>
+    <string name="setting_expense">Fees Setting&#160;&#160;(single selection)</string>
+    <string name="setting_discount">Discount Setting</string>
+    <string name="setting_discount_amount">Set Discount Amount</string>
+    <string name="setting_extra">Additional Fees Setting</string>
+    <string name="setting_extra_amount">Set Additional Fees Amount</string>
+    <string name="setting_currency_and_language">Currency&#038;Language Setting</string>
+    <string name="setting_currency_type">Currency</string>
+    <string name="setting_default_language">Language</string>
+    <string name="setting_safe">Security Settings</string>
+    <string name="setting_gesture_password">Change Gesture Password</string>
+    <string name="setting_net_config">Switch Network</string>
+    <string name="setting_grant_points">Dispense Points</string>
+
+    <string name="assets_detail_title">Assets Detail</string>
+
+    <string name="discount_setting_title">Discount Setting</string>
+    <string name="discount_setting_choose">Discount Calculation (single selection)</string>
+    <string name="discount_setting_cash">Calculate with Cash</string>
+    <string name="discount_setting_cashamount">Enter discount amount</string>
+    <string name="discount_setting_percent">Calculate with Percentage</string>
+    <string name="discount_setting_percentamount">Enter discount percent (e.g. 0.01)</string>
+    <string name="discount_setting_confirm">Confirm</string>
+    <string name="discount_setting_error_percent">Please enter value between 0~1</string>
+    <string name="discount_setting_error_cash">Please enter value greater than 0</string>
+
+    <string name="extra_setting_title">Additional fees Setting</string>
+    <string name="extra_setting_choose">Additional fees Calculation (single selection)</string>
+    <string name="extra_setting_cash">Add with Cash</string>
+    <string name="extra_setting_cashamount">Enter additional fees</string>
+    <string name="extra_setting_percent">Add with Percentage</string>
+    <string name="extra_setting_percentamount">Enter additional percentage (e.g.0.01)</string>
+    <string name="extra_setting_confirm">Confirm</string>
+
+    <string name="currency_setting_title">Currency Setting</string>
+
+    <string name="points_grant_title">Dispense Points</string>
+    <string name="points_grant_member_id">Please enter member ID</string>
+    <string name="points_grant_value">Please enter points</string>
+    <string name="points_grant_success">Points dispense successfully</string>
+
+    <string name="language_setting_title">Language Setting</string>
+
+    <string name="setting_cancel">Cancel</string>
+    <string name="setting_confirm">Confirm</string>
+
+    <string name="checkout_no_order">No Order</string>
+    <string name="checkout_no_detail">No newest order Info</string>
+    <string name="checkout_plus">+&#160;</string>
+    <string name="checkout_receipt_amount">Receive Amount</string>
+    <string name="checkout_receipt_confirm">OK</string>
+    <string name="checkout_search_coin">Search your cryptocurrency</string>
+    <string name="checkout_select_coin">Select Cryptocurrency</string>
+
+    <string name="history_title">Currency Details</string>
+    <string name="history_total_currency_about">About&#160;&#160;</string>
+    <string name="history_detail_info">Details</string>
+    <string name="history_receipt">Receive Payment</string>
+    <string name="item_history_receipt">Received</string>
+
+    <string name="progress_wait">please wait&#8230;</string>
+    <string name="progress_logining">logging in&#8230;</string>
+
+    <string name="need_storage_permission">Please allow storage permission in setting to initate update</string>
+    <string name="check_network">Please check internet connection</string>
+    <string name="network_no_wifi">Your phone is in no WIFI environment, please check download settings</string>
+
+    <string name="referesh_header_pulldown">Pull to refresh</string>
+    <string name="refresh_header_refreshing">Refreshing&#8230;</string>
+    <string name="refresh_header_loading">Loading&#8230;</string>
+    <string name="refresh_header_release">Release to refresh</string>
+    <string name="refresh_header_finish">Complete</string>
+    <string name="refresh_header_failed">Failed</string>
+    <string name="refresh_header_lasttime">\'Last Update\' m-d hh:mm</string>
+    <string name="refresh_header_second_floor">Release to enter second floor</string>
+
+    <string name="refresh_footer_pullup">Pull to load more</string>
+    <string name="refresh_footer_release">Release to load more</string>
+    <string name="refresh_footer_loading">Loading&#8230;</string>
+    <string name="refresh_footer_refreshing">Refreshing&#8230;</string>
+    <string name="refresh_footer_finish">Complete</string>
+    <string name="refresh_footer_failed">Failed</string>
+    <string name="refresh_footer_allloaded">No more data</string>
+
+    <string name="lightning_network_title">Lightning Network</string>
+
+    <string name="no_camera_permission">Please grant the camera permission</string>
+    <string name="currency_not_supported">The currency is not supported</string>
+
+    <string name="order_create_failed">Create order failed</string>
+    <string name="deduct_currency_failed">Deduct failed</string>
+    <string name="deduct_currency_success">Deduct success</string>
+
+    <string name="checkout_payment_wechat">WeChat Pay</string>
+
+    <string name="update_info">1.new version description \n2.new version description  \n3.new version description </string>
+
+    <string-array name="currency_id">
+        <item>156</item>
+        <item>344</item>
+        <item>840</item>
+        <item>392</item>
+        <item>410</item>
+        <item>702</item>
+    </string-array>
+
+    <string-array name="currency">
+        <item>Chinese Yuan(CNY)</item>
+        <item>Hong Kong Dollar(HKD)</item>
+        <item>US Dollar(USD)</item>
+        <item>Japanese Yen(JPY)</item>
+        <item>South Korean Won(KRW)</item>
+        <item>Singapore Dollar(SGD)</item>
+    </string-array>
+
+    <string-array name="currency_name">
+        <item>CNY</item>
+        <item>HKD</item>
+        <item>USD</item>
+        <item>JPY</item>
+        <item>KRW</item>
+        <item>SGD</item>
+    </string-array>
+
+    <string-array name="currency_unit">
+        <item>¥</item>
+        <item>HK$</item>
+        <item>US$</item>
+        <item>JP¥</item>
+        <item>₩</item>
+        <item>S$</item>
+    </string-array>
+
+</resources>

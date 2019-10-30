@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_theme"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/account_merchant_icon_layout"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <com.achpay.wallet.widget.CircleImageView
+                android:id="@+id/account_merchant_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/account_head_icon"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/account_merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/account_merchant_icon_layout"
+            android:text="肯德基"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/fragment_mine_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/history_receipt"
+        android:layout_below="@+id/history_detail_info">
+
+        <com.achpay.wallet.widget.ClassicHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlEnableLastTime="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@mipmap/bg_finance">
+
+                <LinearLayout
+                    android:id="@+id/account_merchant_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/account_merchant_coinamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0.00000000"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/account_merchant_cointype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/account_coin_name"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/account_merchant_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/account_merchant_coin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/account_totalcurrency_part"
+                        android:textColor="@color/input_unconfirm"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/account_merchant_currencyamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0.00"
+                        android:textColor="@color/input_unconfirm"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/empty_space"
+                        android:textColor="@color/input_unconfirm"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/account_merchant_currencytype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="CNY"
+                        android:textColor="@color/input_unconfirm"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/grey_theme"/>
+
+            <RelativeLayout
+                android:id="@+id/account_detail_asset"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/account_detail_asset_iv"
+                    android:layout_width="24dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/icon_finance"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/account_detail_asset_iv"
+                    android:text="@string/account_detail_asset"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/arr_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_assetdetail_rv_layout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mine_assetdetail_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="@color/white"
+                    android:scrollbars="none"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/grey_theme"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/account_detail_setting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/account_detail_setting_iv"
+                    android:layout_width="24dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/icon_setting"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/account_detail_setting_iv"
+                    android:text="@string/account_detail_setting"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/arr_gray"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="1dp"
+                android:layout_gravity="left"
+                android:background="@color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/account_lightning_network_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/account_lightning_network_iv"
+                    android:layout_width="24dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/icon_lighting"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/account_lightning_network_iv"
+                    android:text="@string/account_detail_lightning_network"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/arr_gray"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="1dp"
+                android:layout_gravity="left"
+                android:background="@color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/account_detail_about"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/account_detail_about_iv"
+                    android:layout_width="24dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/icon_about"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/account_detail_about_iv"
+                    android:text="@string/account_detail_about"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/arr_gray"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

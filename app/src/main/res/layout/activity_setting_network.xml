@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_theme"
+    android:orientation="vertical"
+    tools:context=".mvp.setting.SettingLanguageActivity">
+
+    <include layout="@layout/left_back_titlebar"/>
+
+    <RelativeLayout
+        android:id="@+id/setting_network_showtips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="输入金额页弹窗"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <CheckBox
+            android:id="@+id/setting_network_showtips"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/single_checked_selector"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="false"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:background="@color/grey_theme"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/network_setting_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+
+    <EditText
+        android:id="@+id/network_setting_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dialog_background_border"
+        android:cursorVisible="true"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:textColorHint="@color/input_grey"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/connect_websocket"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/setting_confirm_background"
+            android:gravity="center"
+            android:text="websocket连接"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/disconnect_websocket"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/setting_confirm_background"
+            android:gravity="center"
+            android:text="websocket断开"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/network_setting_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/setting_confirm_background"
+        android:text="@string/setting_confirm"
+        android:textColor="@color/white"/>
+</LinearLayout>

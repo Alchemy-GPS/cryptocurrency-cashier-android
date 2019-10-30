@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_theme"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/checkout_income_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/checkout_firstitem">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_first_income"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:gravity="center_vertical"
+                android:text="@string/item_first_income"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/fragment_checkout_incometime"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:gravity="center_vertical"
+                android:text=""
+
+                android:textColor="@color/white"
+                android:textSize="11dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@+id/fragment_checkout_right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fragment_checkout_incomeamount_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/checkout_plus"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:id="@+id/fragment_checkout_incomeamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:id="@+id/fragment_checkout_incometype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fragment_checkout_redpoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/checkout_red_point"/>
+
+                <TextView
+                    android:id="@+id/fragment_checkout_incomestatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fragment_checkout_right"
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/arr_white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/fragment_checkout_search"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/checkout_search_background">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="11dp"
+                android:src="@mipmap/search"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="11dp"
+                android:text="@string/checkout_search_coin"
+                android:textColor="@color/dark_grey"
+                android:textSize="13dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_checkout_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

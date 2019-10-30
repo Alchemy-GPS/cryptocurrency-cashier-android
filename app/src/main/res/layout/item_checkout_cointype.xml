@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/item_cointype_icon"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:src="@mipmap/icon_btc"/>
+
+    <TextView
+        android:id="@+id/item_cointype_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/item_cointype_icon"
+        android:text="@string/item_cointype_name"
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/item_cointype_name"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_cointype_icon"
+            android:text="("
+            android:textColor="@color/grey_aa"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/item_cointype_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_cointype_icon"
+            android:text="Bitcoin"
+            android:textColor="@color/grey_aa"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_cointype_icon"
+            android:text=")"
+            android:textColor="@color/grey_aa"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_cointype_right"
+        android:layout_width="8dp"
+        android:layout_height="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/arr_gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:background="@color/grey_theme"/>
+
+</RelativeLayout>
